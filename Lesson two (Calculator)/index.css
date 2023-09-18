@@ -1,0 +1,91 @@
+.numOperator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-style: dashed;
+    background-color:bisque;
+    width: 350px;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numOperator h2{
+    padding: 20px;
+    
+}
+
+.button.operator{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  
+    #add, #subtract, #reset, #continue{
+        margin: 5px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    #add:hover,#subtract:hover, #divide:hover,#reset:hover,#equal:hover,#continue:hover,#multiply:hover{
+        transform: scale(1.05);
+        box-shadow: 5px 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+}
+
+
+.button.number{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5. 1fr);
+    place-items: center;
+
+    #button123{
+        grid-row: 1;
+        grid-column: 1 / span 5;
+    }
+    #button456{
+        grid-row: 2;
+        grid-column: 1 / span 5;
+        #equal{
+            grid-row: 1 / span 2;   
+        }
+    }
+    #button789{
+        grid-row:  3;
+        grid-column: 1 / span 5;
+
+    }
+  
+    #button123 button, #button456 button, #button789 button {
+        margin: 5px;
+        padding: 30px;
+        border-radius: 10px;;
+    }
+    
+    #button123 button:hover, #button456 button:hover, #button789 button:hover{
+        transform: scale(1.05);
+        box-shadow: 5px 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+}
+
+
+
+/* .button button:hover{
+    box-shadow: 5px 5px 10px;
+    margin: 20px;
+    transform: scale(1.2);
+    cursor: pointer;
+} */
+h1{
+    text-align: center;
+}
+
